@@ -96,6 +96,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/"
                 onClick={(e) => {
                 window.location.href = "mailto:schillapalli@scu.edu";
                 e.preventDefault();
