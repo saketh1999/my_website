@@ -15,6 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { IoMdContact } from "react-icons/io";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -89,6 +90,18 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                onClick={(e) => {
+                window.location.href = "mailto:schillapalli@scu.edu";
+                e.preventDefault();
+            }}
+              >
+                <IoMdContact style={{ marginBottom: "2px" }} /> Contact Me
               </Nav.Link>
             </Nav.Item>
 
